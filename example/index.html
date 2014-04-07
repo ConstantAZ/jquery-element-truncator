@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="example.css">
+<script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+<script src="../element-truncator.min.js"></script>
+<script>
+$(function () {
+    $('.num_trim').truncateToElements({
+        truncate_to: 5,
+        csstransitions: Modernizr.csstransitions
+    });
+    $('.num_trim').on('beforeExpand', function () {
+        console.log('Triggered beforeExpand event');
+    });
+    $('.num_trim').on('afterExpand', function () {
+        console.log('Triggered afterExpand event');
+    });
+    $('.num_trim').on('beforeCollapse', function () {
+        console.log('Triggered beforeCollapse event');
+    });
+    $('.num_trim').on('afterCollapse', function () {
+        console.log('Triggered afterCollapse event');
+    });
+});
+</script>
+</head>
+<body>
+<div class="num_trim">
+    <div class="card">text text text text text text text text text text text text</div>
+    <div class="card">text text text text text text</div>
+    <div class="card">text text text text text text text text text text</div>
+    <div class="card">text text text text text text text text text text text text</div>
+    <div class="card">text text text text text text text text text text text text</div>
+    <div class="card">text text text text text text text text text text text text</div>
+    <div class="card">text text text text text text text text text text text text text text</div>
+    <div class="card">text</div>
+    <div class="card">text text text text text text text text text text text text text text</div>
+    <div class="card">text text text text text text text text text text text text</div>
+    <div class="card">text text text text text</div>
+    <div class="card">text text text text text</div>
+    <div class="card">text text</div>
+</div>
+
+</body>
+</html>

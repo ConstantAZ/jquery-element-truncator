@@ -1,0 +1,29 @@
+.num_trim {
+    overflow:hidden;
+    text-align:center;
+    height: auto;
+}
+.card {
+    display:inline-block;
+    width:30%;
+    margin:5px;
+    background:#eee;
+    vertical-align:top;
+}
+.collapse_control {
+    text-align:center;
+    margin-top:18px;
+    border-top:1px dashed #ddd;
+}
+.collapse_button {
+    background: #fff;
+    display:inline-block;
+    position:relative;
+    top:-14px;
+    padding:5px 15px;
+    border:1px solid #aaa;
+    cursor:pointer;
+    line-height:16px;
+    font-size:14px;
+    outline: 5px solid #fff;
+}
