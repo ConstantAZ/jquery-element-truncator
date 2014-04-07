@@ -1,7 +1,7 @@
 jquery-element-truncator
 ========================
 
-Simple jQuery plugin to truncate element 'lists' and then expand\collapse them with animation. Supports CSS3 transitions, adds custom events.
+Simple jQuery plugin to truncate element 'lists' and then expand\collapse them with animation. Supports CSS3 transitions, emits custom events.
 
 Example: http://jsfiddle.net/ConstantA/LA9Zr/
 
