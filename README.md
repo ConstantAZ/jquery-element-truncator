@@ -1,13 +1,13 @@
 jquery-element-truncator
 ========================
 
-Simple jQuery plugin to truncate element 'lists' and then expand\collapse them with animation. Supports CSS3 transitions, adds custom events.
+Simple jQuery plugin to truncate element 'lists' and then expand\collapse them with animation. Supports CSS3 transitions, emits custom events.
 
 Example: http://jsfiddle.net/ConstantA/LA9Zr/
 
 Init options:
 
-+ `child_selector` - String. jQuery selector string to get elements to truncate. Default: `false` (uses .`children()`);
++ `child_selector` - String. jQuery selector string to get elements to truncate. Default: `false` (uses `.children()`);
 + `truncate_to` - Integer. Number of elements to truncate to. Default: `6`;
 + `animation_duration` - Integer, ms. Animation speed in ms. Default: `500`;
 + `button_class` - String. Control button class. Default: `'collapse_button'`;
