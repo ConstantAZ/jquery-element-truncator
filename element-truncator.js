@@ -63,7 +63,7 @@ $.fn.extend({
                 });
             };
             var afterAnimation = function (e) {
-                if (event.target != this) {
+                if (e.target != this) {
                     return;
                 }
                 switch ($wrapper.data('collapsed')) {
